@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: student.3.87.6.96.nip.io
+  - host: student.3.87.6.96.nip.io:30080
     http:
       paths:
       - path: /

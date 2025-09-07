@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: grafana.3.87.6.96.nip.io
+  - host: grafana.3.87.6.96.nip.io:30080
     http:
       paths:
       - path: /

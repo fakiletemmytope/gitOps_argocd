@@ -11,7 +11,7 @@ metadata:
 
 spec:
   rules:
-  - host: argocd.3.87.6.96.nip.io
+  - host: argocd.3.87.6.96.nip.io:30080
     http:
       paths:
       - path: /
