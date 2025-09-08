@@ -17,7 +17,7 @@ spec:
             name: grafana
             port:
               number: 3000
-  - host: prometheus.172.31.85.136.nip.io
+  - host: prometheus.3.95.208.167.nip.io
     http:
       paths:
       - path: /
