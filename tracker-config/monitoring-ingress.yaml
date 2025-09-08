@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: grafana-ingress
+  name: monitoring-ingress
   namespace: monitoring
   annotations:
     kubernetes.io/ingress.class: nginx
@@ -17,3 +17,13 @@ spec:
             name: grafana
             port:
               number: 3000
+  - host: prometheus.3.87.6.96.nip.io:30080
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: prometheus
+            port:
+              number: 9090
